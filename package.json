@@ -1,0 +1,29 @@
+{
+    "name": "@nuxtclub/octicons",
+    "author": "Lautaro Pereyra <dev.lautaropereyra@gmail.com>",
+    "license": "MIT",
+    "description": "An easy way to integrate Octicons with NuxtJS",
+    "version": "1.0.0",
+    "keywords": [
+        "nuxt",
+        "octicons",
+        "module"
+    ],
+    "main": "lib/module.js",
+    "files": [
+        "lib",
+        "types/*.d.ts"
+    ],
+    "types": "types/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nuxtclub/octicons.git"
+    },
+    "bugs": "https://github.com/nuxtclub/octicons/issues",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@primer/octicons": "^13.0.0"
+    }
+}
