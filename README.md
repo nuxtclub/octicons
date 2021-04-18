@@ -46,4 +46,14 @@ Using \$octicons you can access to an object with all the icons of the [Octicons
 </template>
 ```
 
+## Component
+
+Now you can also use the auto-imported component in your `.vue` files.
+
+```vue
+<template>
+	<octicons name="home" size="64">
+</template>
+```
+
 Learn more about Octicons [here](https://octicons-primer.vercel.app/octicons/).
