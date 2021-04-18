@@ -1,29 +1,39 @@
 {
-    "name": "@nuxtclub/octicons",
-    "author": "Lautaro Pereyra <dev.lautaropereyra@gmail.com>",
-    "license": "MIT",
-    "description": "An easy way to integrate Octicons with NuxtJS",
-    "version": "1.0.1",
-    "keywords": [
-        "nuxt",
-        "octicons",
-        "module"
-    ],
-    "main": "lib/module.js",
-    "files": [
-        "lib",
-        "types/*.d.ts"
-    ],
-    "types": "types/index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nuxtclub/octicons.git"
-    },
-    "bugs": "https://github.com/nuxtclub/octicons/issues",
-    "publishConfig": {
-        "access": "public"
-    },
-    "dependencies": {
-        "@primer/octicons": "^13.0.0"
-    }
+	"name": "@nuxtclub/octicons",
+	"author": "Lautaro Pereyra <dev.lautaropereyra@gmail.com>",
+	"license": "MIT",
+	"description": "An easy way to integrate Octicons with NuxtJS",
+	"version": "1.1.0",
+	"scripts": {
+		"dev": "nuxt test/fixture",
+		"test": "jest",
+		"release": "npm run test && git push --follow-tags && npm publish"
+	},
+	"keywords": [
+		"nuxt",
+		"octicons",
+		"module"
+	],
+	"main": "lib/module.js",
+	"files": [
+		"lib",
+		"types/*.d.ts"
+	],
+	"types": "types/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nuxtclub/octicons.git"
+	},
+	"bugs": "https://github.com/nuxtclub/octicons/issues",
+	"publishConfig": {
+		"access": "public"
+	},
+	"dependencies": {
+		"@primer/octicons": "^13.0.0"
+	},
+	"devDependencies": {
+		"@nuxt/test-utils": "^0.2.2",
+		"jest": "^26.6.3",
+		"nuxt": "^2.15.4"
+	}
 }
