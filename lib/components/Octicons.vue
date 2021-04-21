@@ -1,5 +1,15 @@
 <template>
-	<div v-html="$octicons[icon].toSVG({ width: size })" />
+	<svg
+		version="1.1"
+		:width="size"
+		:height="size"
+		:viewBox="`0 0 ${size > 16 ? 24 : 16} ${size > 16 ? 24 : 16}`"
+		style="fill: currentColor;"
+		class="octicon"
+		:class="`octicon-${name}`"
+		aria-hidden="true"
+		v-html="icon"
+	/>
 </template>
 
 <script>
@@ -16,7 +26,10 @@ export default {
 	},
 	computed: {
 		icon() {
-			return this.$octicons[this.name] ? this.name : 'octoface'
+			const size = parseInt(this.size) != NaN ? parseInt(this.size) : 24
+			const height = size > 16 ? 24 : 16
+			const name = this.$octicons[this.name] ? this.name : 'octoface'
+			return this.$octicons[name].heights[height].path
 		},
 	},
 }

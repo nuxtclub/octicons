@@ -1,5 +1,5 @@
 <template>
-	<div class="epic">
+	<div>
 		<octicons />
 		<octicons name="home" />
 		<octicons name="home" size="16" />
