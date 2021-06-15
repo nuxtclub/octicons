@@ -17,7 +17,7 @@ export default {
 	props: {
 		name: {
 			type: String,
-			default: 'octoface',
+			default: 'bug',
 		},
 		size: {
 			type: String,
@@ -28,7 +28,7 @@ export default {
 		icon() {
 			const size = parseInt(this.size) != NaN ? parseInt(this.size) : 24
 			const height = size > 16 ? 24 : 16
-			const name = this.$octicons[this.name] ? this.name : 'octoface'
+			const name = this.$octicons[this.name] ? this.name : 'bug'
 			return this.$octicons[name].heights[height].path
 		},
 	},
